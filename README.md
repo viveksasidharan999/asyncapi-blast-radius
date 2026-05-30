@@ -1,6 +1,6 @@
 # AsyncAPI Blast Radius
 
-`asyncapi-blast-radius` is a commit-ready Python CLI for analyzing how AsyncAPI contract changes affect downstream consumers.
+`asyncapi-blast-radius` is a Python CLI for analyzing how AsyncAPI contract changes affect downstream consumers.
 
 Unlike generic diff tools, it focuses on the operational question teams usually ask next: "Who is likely to break, and what should we coordinate before rollout?"
 
