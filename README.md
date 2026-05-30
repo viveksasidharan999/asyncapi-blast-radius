@@ -188,5 +188,5 @@ Each consumer entry in the registry is a JSON object:
 ## Development
 
 ```bash
-pytest
+python -m pytest
 ```

@@ -26,6 +26,12 @@ dependencies = [
   "PyYAML>=6.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/viveksasidharan999/asyncapi-blast-radius"
+Documentation = "https://github.com/viveksasidharan999/asyncapi-blast-radius#readme"
+Repository = "https://github.com/viveksasidharan999/asyncapi-blast-radius"
+Issues = "https://github.com/viveksasidharan999/asyncapi-blast-radius/issues"
+
 [project.optional-dependencies]
 dev = [
   "pytest>=8.0",
