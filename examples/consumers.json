@@ -1,0 +1,29 @@
+[
+  {
+    "name": "billing-service",
+    "team": "Revenue Platform",
+    "repo": "github.com/example/billing-service",
+    "topics": ["orders.created.v1"],
+    "fieldsUsed": ["total", "customer.email"],
+    "slackChannel": "#revenue-alerts",
+    "runbook": "https://runbooks.example.com/billing-orders"
+  },
+  {
+    "name": "fulfillment-service",
+    "team": "Operations Platform",
+    "repo": "github.com/example/fulfillment-service",
+    "topics": ["orders.created.v1"],
+    "fieldsUsed": ["shipping.address.postalCode", "orderId"],
+    "slackChannel": "#ops-alerts",
+    "runbook": "https://runbooks.example.com/fulfillment-orders"
+  },
+  {
+    "name": "crm-sync",
+    "team": "Growth Systems",
+    "repo": "github.com/example/crm-sync",
+    "topics": ["orders.created.v1"],
+    "fieldsUsed": ["customer.email", "customer.loyaltyTier"],
+    "slackChannel": "#growth-integrations",
+    "runbook": "https://runbooks.example.com/crm-sync-orders"
+  }
+]

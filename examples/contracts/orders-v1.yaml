@@ -1,0 +1,53 @@
+asyncapi: '3.1.0'
+info:
+  title: Order Events
+  version: '1.0.0'
+defaultContentType: application/json
+channels:
+  orders.created.v1:
+    address: orders.created.v1
+    messages:
+      orderCreated:
+        name: OrderCreated
+        payload:
+          type: object
+          required:
+            - orderId
+            - customer
+            - total
+          properties:
+            orderId:
+              type: string
+            total:
+              type: number
+            currency:
+              type: string
+            customer:
+              type: object
+              required:
+                - id
+                - email
+              properties:
+                id:
+                  type: string
+                email:
+                  type: string
+                loyaltyTier:
+                  type: string
+            shipping:
+              type: object
+              properties:
+                address:
+                  type: object
+                  properties:
+                    city:
+                      type: string
+                    postalCode:
+                      type: string
+operations:
+  publishOrderCreated:
+    action: send
+    channel:
+      $ref: '#/channels/orders.created.v1'
+    messages:
+      - $ref: '#/channels/orders.created.v1/messages/orderCreated'

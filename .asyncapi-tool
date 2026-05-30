@@ -1,0 +1,11 @@
+title: AsyncAPI Blast Radius
+description: Analyze AsyncAPI contract changes, estimate downstream blast radius, and generate owner-focused migration checklists for CI and release workflows.
+filters:
+  language: Python
+  technology:
+    - Python
+    - CLI
+  categories:
+    - compare
+    - others
+  hasCommercial: false
